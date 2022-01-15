@@ -15,5 +15,5 @@ Run sequentially:
 
 ### Restrictions
 
-1. You need a lot of space on your drive.
+1. You need a lot of space on your drive (approx. 40 Gb to parse both UO and FOP files as of January 2022).
 2. Parsing addresses into components somewhen inaccurate. Managers posts too.
