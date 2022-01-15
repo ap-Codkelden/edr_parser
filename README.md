@@ -1,8 +1,9 @@
 ### Requirements
 
 * Python 3.8+
-* [pandas](https://pypi.org/project/pandas/)
-* [pyarrow](https://pypi.org/project/pyarrow) or [fastparquet](https://pypi.org/project/fastparquet/)
+* [pandas](https://pypi.org/project/pandas)
+* [pyarrow](https://pypi.org/project/pyarrow) or [fastparquet](https://pypi.org/project/fastparquet)
+* [lxml](https://pypi.org/project/lxml)
 
 ### How to use
 
