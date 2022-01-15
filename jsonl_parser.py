@@ -4,17 +4,7 @@
 
 import address_parser
 import argparse
-# from hashlib import md5
-# from os import scandir
-# from tools import csv_compatible, digits_up, store_csv
-# import collections
-# import csv
-# import numpy as np
-# import os
-# import pickle
-# import sqlite3
 import tools
-# import uuid
 from datetime import datetime
 from importlib import reload
 import json
