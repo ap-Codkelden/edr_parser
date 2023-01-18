@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+j #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 
@@ -248,6 +248,7 @@ if __name__ == "__main__":
     df_kved.to_parquet("df_kved.parquet")
     df_founders.to_parquet("df_founders.parquet")
     df.to_parquet("df.parquet")
+    print("JSONL file(s) parsed.")
 
     df['region'] = None
     df['rajon'] = None
@@ -258,6 +259,7 @@ if __name__ == "__main__":
         sys.exit(0)
 
     # reload(address_parser)
+    print('Start address parsing...')
     ap = address_parser.LightAddressParser(
         np_marks=tools.marks, obl_marks2=tools.obl_marks2,
         obl_marks=tools.obl_marks)
@@ -267,5 +269,6 @@ if __name__ == "__main__":
     start_time = time.time()
     df[['region', 'rajon', 'locality']] = add_addresses(df)
     print(f"\n--- {round(time.time() - start_time, 2)} seconds ---")
-
+    print('Saving file...', end='')
     df.to_parquet("df.parquet")
+    print('saved\n')
